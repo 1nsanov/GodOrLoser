@@ -88,8 +88,6 @@ function Counter() {
 }
 
 function cancel() {
-	let one = scoreRoundOne;
-	let two = scoreRoundTwo;
 	countRound = 1;
 	document.getElementById("hatFill").innerHTML = "ROUND " + countRound;
 	document.getElementById("openGame").style.display = "none";
@@ -104,7 +102,7 @@ function cancel() {
 	animationRounds('46px', 'black')
 	document.getElementById("divFillResult").style.fontSize = "50px"
 	document.getElementById("divFillResult").style.fontStyle = "italic"
-	if (one > two) {
+	if (sumScoreOne > sumScoreTwo) {
 		document.getElementById("divResultGame").innerHTML =
 			"PLAYER 1 WON !"
 	} else {
