@@ -1,0 +1,218 @@
+.topdiv {
+  background-image: linear-gradient(to top, #ffafbd, #ffedbc);
+  font-weight: bold;
+  position: absolute;
+  bottom: 85%;
+  border-bottom: 10px solid rgb(58, 58, 58);
+  border-bottom-style: ridge;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.leftdiv {
+  background-image: linear-gradient(to top, #c9ffbf, #ffafbd);
+  position: absolute;
+  bottom: 0;
+  top: 15%;
+  right: 50%;
+  left: 0;
+  border-right: 2px solid rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rightdiv {
+  background-image: linear-gradient(to top, #c9ffbf, #ffafbd);
+  position: absolute;
+  bottom: 0;
+  top: 15%;
+  right: 0;
+  left: 50%;
+  border-left: 2px solid rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body {
+  font-family: Futura Md BT;
+  height: 100%;
+  background-image: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+}
+
+#players2,
+#players1 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  top: 70%;
+  font-family: Futura Md BT;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+    to right,
+    #ffe259 0%,
+    #ffa751 51%,
+    #ffe259 100%
+  );
+  background-size: 200% auto;
+  transition: 0.7s;
+}
+#players2:hover,
+#players1:hover {
+  background-position: right center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  font-size: 36px;
+}
+
+#start {
+  position: absolute;
+  font-size: 75px;
+  padding: 10px;
+  font-weight: bold;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: Futura Md BT;
+  background-image: linear-gradient(
+    to right,
+    #aaffa9 0%,
+    #11ffbd 51%,
+    #aaffa9 100%
+  );
+  background-size: 200% auto;
+  border-radius: 70px;
+  border: 1px solid black;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  transition: 1s;
+  letter-spacing: 4px;
+}
+
+#start:hover {
+  background-position: right center;
+  font-size: 100px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+.divStart {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#openGame {
+  display: none;
+}
+
+#roundScoreOne,
+#roundScoreTwo {
+  position: absolute;
+  font-size: 80px;
+  font-weight: bold;
+  top: 15%;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transition: 1s;
+}
+
+#textScore {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  top: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+#textNumber {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  top: 53%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+#countScoreOne,
+#countScoreTwo {
+  position: absolute;
+  font-size: 65px;
+  transition: 0.5s;
+}
+
+#divResultGame {
+  padding: 25px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#divFillResult {
+  position: absolute;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px 30px 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 100px;
+  top: 25%;
+  background-image: linear-gradient(to top, #ffefba, #ffffff);
+  font-size: 24px;
+}
+
+#hatFill {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 46px;
+  transition: 1s;
+}
+
+#nameGame {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  top: 7%;
+  font-family: Futura Md BT;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 15px;
+  background: linear-gradient(to top, #ffc371, #ff5f6d, #ffc371);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  background-size: 200% auto;
+  animation: background 3s infinite alternate;
+}
+@keyframes background {
+  100% {
+    background-position: 0 100px;
+  }
+}

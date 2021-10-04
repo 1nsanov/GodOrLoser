@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>God or Loser</title>
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="icon-gamepad.png" />
+  </head>
+  <body>
+    <div class="divStart">
+      <div id="divFillResult">
+        <div id="divResultGame">
+          Game rules: who has the highest score wins!
+        </div>
+      </div>
+      <div id="nameGame">God or Loser</div>
+      <button onclick="startGame()" id="start">START</button>
+    </div>
+    <div id="openGame">
+      <div class="topdiv">
+        <p id="hatFill">ROUND 1</p>
+      </div>
+      <div class="leftdiv">
+        <div id="roundScoreOne">0</div>
+        <p id="textScore">SCORE</p>
+        <div id="countScoreOne">0</div>
+        <p id="textNumber">NUMBER</p>
+        <button onclick="clickPlayer1()" id="players1">PLAYER 1</button>
+      </div>
+      <div class="rightdiv">
+        <div id="roundScoreTwo">0</div>
+        <p id="textScore">SCORE</p>
+        <div id="countScoreTwo">0</div>
+        <p id="textNumber">NUMBER</p>
+        <button onclick="clickPlayer2()" id="players2">PLAYER 2</button>
+      </div>
+    </div>
+  </body>
+</html>
