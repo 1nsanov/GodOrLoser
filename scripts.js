@@ -92,8 +92,8 @@ function cancel() {
 	document.getElementById("hatFill").innerHTML = "ROUND " + countRound;
 	document.getElementById("openGame").style.display = "none";
 	document.getElementById("start").innerHTML = "RESTART?";
-	document.getElementById("countScoreOne").innerHTML = scoreOne = 0;
-	document.getElementById("countScoreTwo").innerHTML = scoreTwo = 0;
+	document.getElementById("countScoreOne").innerHTML = sumScoreOne = 0;
+	document.getElementById("countScoreTwo").innerHTML = sumScoreTwo = 0;
 	document.getElementById("roundScoreOne").innerHTML = scoreRoundOne = 0;
 	document.getElementById("roundScoreTwo").innerHTML = scoreRoundTwo = 0;
 	document.getElementById("players1").disabled = false;
